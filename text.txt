@@ -1,0 +1,95 @@
+apa itu git?
+
+git adalah = version control system software yang bisa mengelola file dalam folder, dan dikenal sebagai source code management. system yang mengelola perubahan dari sebuah dokumen, program, website dan kumpulan info laen
+
+- file di dalam folder disebut repository(repo), di dalam git tidak disebut folder lagi, tapi repo. 
+- git akan menyimpan tiap history perubahan dengan menggunakan "commit" , yg di windows disebut save. stelah di   commit akan direkam snapshot, jadi itulah knapa bisa diliat history nya
+
+kenapa harus menggunakan vcs? 
+1. untuk merapikan dokumen dokumen yang berantakan, dikelola dngan baik oleh vcs
+2. source code yang beda akan cukup repot kalo di gabungkan/collaborate. dengan vcs bisa terbantu
+3. bedanya dengan google.docs, googledrive ato dropbox? tidak se flexible vcs, dan karena tidak ditujukan untuk source code
+
+gunanya:
+
+1. sebuah system yg menyimpan rekaman dari perubahan yg terjadi pada source code
+2. memungkinkan kolaborasi tercipta dengan baik
+3. bisa mengetahui siapa yang melakukan perubahan source code
+4. bisa kembali ke situasi/kondisi semula sebelum dilakukan modifikasi, dengan command "check out"
+
+perintah git:
+repo    --> folder project yang di inisialisasi sbagai repo
+commit  --> rekam source code project kita
+hash    --> serangkaian angka yg sbagai identifikasi commit kita
+checkout--> berpindah ke sebuah commit
+branch  --> cabang dari sebuah commit
+Merge   --> gabungkan 2 atau lebih branch
+remote  --> sumber yang memiliki repo, contoh github. 
+push    --> mengirim repo dari git di laptop ke github/cloud di git hub, dengan meng clone repo di laptop kita
+pull    --> mendownload repo yang sebelumnya sudah dikirim/upload
+
+
+
+apa itu git hub?
+
+Sebuah website yang berfungsi sama seperti git, yaitu sebagai version control system. jadi tidak perlu install git lagi di pc/laptop, cukup buat akun dan login scara online ke situs www.github.com
+
+github adalah layanan cloud yang berfungsi sbgai version control system, yang menyimpan dan mengelola folder/repo sebuah project/source code
+
+git bisa sinkronisasi dengan github, untuk uploading file ato source code
+
+===================================================================================================================
+
+* fullstack javascript *
+
+cara cloning repo git ke ke github :
+copas dari github link kita, trus buka git bash, ketik "git clone (copas link tadi)", enter
+
+ketik " git remote -v " pada directory/folder/repo kita di laptop /desktop
+
+untuk menambahkan file ke github, ketik command :
+
+git push origin main --> enter
+
+git status --> muncul "on branch main, Your branch is up to date with 'origin/main'
+
+lalu
+
+git commit -m "tambah file kelas.js" --> enter
+
+
+stelah itu muncul :
+git config --global user.email "email anda"
+git config --global user.name "username github"
+
+
+
+
+
+
+
+
+
+
+
+===================================================================================================================
+
+backend web developer syarat:
+
+1. aplikasi 
+harus mulai dengan pengetahuan dasar front end. 
+2. pilih basa programming, salah 1 at least :
+- javascript, node js
+- php
+- java
+- python
+
+3. pilih database
+ - relational, mysql, postgre sql
+ - no sequel db, mongo db, firebase
+
+4. pilih framework sesuai basa pemrogramannya
+  - javascript --> nodeJS
+  - Java   --> springboot
+  - python --> django
+
