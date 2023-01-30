@@ -7,16 +7,17 @@
 // beli dibawah 250000, diskon 0%
 
 
-var harga10 = 600000;
-var harga5 = 500000;
+var harga5  = 500000;
+var harga25 = 300000; 
 
+if(harga5 >= 500000){
+    console.log ("discount 10% " + harga5 * 0.1);}
 
-if(harga10 >= 500000){
-    console.log ("discount 10% " * 0.1);
-
-    elseif (harga5 <= 500000 && harga5 == 500000);{
-        console.log ("discount 5% " * 0.5); }
+    else if (harga5 <= 500000 && harga5 == 500000) { 
+        console.log ("discount 5% " + harga5 * 0.05); }
     
-    elseif
+    
+    else if (harga25 <= 300000 * 0.25) {
+        console.log ("discount 2.5% " + harga25);
+    }
 
-}

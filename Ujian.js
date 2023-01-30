@@ -20,24 +20,24 @@ console.log(sum);
 // Grade E: score antara 39 - 0
 
 
-var score = 85;
+var score = 84;
 
-if(score <= 100 && score >= 84){
-    console.log("Nilai anda Grade A "); }
+if(score <= 100 && score >= 85){
+    console.log("Nilai anda Grade A ")}
 
-    elseif(score <= 85 && score >= 69 ); {
+    else if(score <= 85 && score >= 69 ) {
         console.log("Nilai anda Grade B "); }
 
-    elseif(score <= 70 && score >= 54); {
+    else if(score <= 70 && score >= 54) {
         console.log("Nilai anda Grade C "); }
 
-    elseif(score <= 55 && score >= 39); {
+    else if(score <= 55 && score >= 39) {
         console.log("Nilai anda Grade D "); }
 
-    elif(score <= 40 && score >= 0); {
+    else if(score <= 40 && score >= 0) {
         console.log("Nilai anda Grade E "); }
 
-    else ()
+    else
         {console.log("masukkan nilai yang benar "); } 
     
 
