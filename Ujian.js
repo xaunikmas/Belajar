@@ -23,7 +23,7 @@ console.log(sum);
 var score = 84;
 
 if(score <= 100 && score >= 85){
-    console.log("Nilai anda Grade A ")}
+    console.log("Nilai anda Grade A "); }
 
     else if(score <= 85 && score >= 69 ) {
         console.log("Nilai anda Grade B "); }

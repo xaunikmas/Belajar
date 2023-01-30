@@ -24,29 +24,13 @@
  * Total yang harus di bayarkan adalah Rp. 675000.
  */
 
-let code = "DISCOUNT10%";
-let price ="";
-let total;
+let price = 750000;
+let code = "Discount 10%";
+let harga = "";
 
-switch (code.toLowerCase()) {
-  case "discount10%":
-    if (price >= 500000) {
-      total = price * 0.9
-    } else if (price >= 300000 && price < 500000) {
-      total = price * 0.95;
-    } else {
-      total = price * 0.975;
-    }
-    console.log("Total yang harus di bayar Rp. " + total + ".");
-    break;
-  case "discountharbolnas":
-    if (price >= 250000) {
-      total = price * 0.85;
-    } else {
-      total = price;
-    }
-    console.log("Total yang harus di bayar Rp. " + total + ".");
-    break;
-  default:
-    console.log("Tidak terdapat promo code tersebut.");
-}
+harga ? console.log ("anda mendapat diskon 10% dari pembelian total seharga "+ harga +" yaitu " + harga * 0.1); }
+             else if (harga < price && harga == 30000){
+          console.log ("anda mendapat diskon 5% "+ price * 0.05); }
+             else if (harga <= 300000) {
+          console.log("anda mendapat diskon 2.5%, sejumlah " + harga * 0.025); }
+        else (console.log ("tidak ada diskon"));
