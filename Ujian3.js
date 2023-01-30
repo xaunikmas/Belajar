@@ -25,12 +25,25 @@
  */
 
 let price = 750000;
-let code = "Discount 10%";
-let harga = "";
+let code = "DISCOUNT 10%";
+let total;
 
-harga ? console.log ("anda mendapat diskon 10% dari pembelian total seharga "+ harga +" yaitu " + harga * 0.1); }
-             else if (harga < price && harga == 30000){
-          console.log ("anda mendapat diskon 5% "+ price * 0.05); }
-             else if (harga <= 300000) {
-          console.log("anda mendapat diskon 2.5%, sejumlah " + harga * 0.025); }
-        else (console.log ("tidak ada diskon"));
+switch (code.toLowerCase()){
+    case "discount 10%" :
+    if (price >= 500000) {
+        total = price * 0.9;
+    } else if (price < 500000 || price == 300000) {
+        total = price * 0.95;
+    }else(price < 300000)
+        total = price * 0.975;  
+    console.log ("anda mendapat diskon" + " " + total); 
+    break;
+
+    case "Harbolnas" :
+    if (price >= 250000){
+        total = price * 0.85; }
+    else (price < 250000)
+         total = price;
+         console.log ("tidak ada diskon"); 
+    }    
+
