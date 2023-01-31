@@ -1,0 +1,315 @@
+program --> adalah sekumpulan instruksi terstruktur dengan tujuan agar komputer dapat berperilaku sesuai ketentuan
+
+aplikasi aplikasi, website, game juga adalah program. karena didalamnya terdapat sekumpulan instruksi
+
+instruksi -> adalah perintah yang berbentuk petunjuk yang sederhana, terstruktur, benar dan akurat
+
+instruksi ke komputer harus sederhana, benar, jelas dan detil
+
+instruksi yang diberikan ke komputer adalah "statement" 
+
+
+pemrograman adalah :
+cara kita memberikan instruksi simpel dan terstruktur pada komputer
+instruksi harus benar dan masuk akal
+instruksi harus sesuai dengan aturan dari bahasa pmrograman
+
+
+
+untuk menulis source code ada 3 hal penting ;
+1. tulis dimana dan bagaimana --> text editor
+2. dimana source code di konversi ke bahasa mesin(assembly)
+3. bagaimana meng eksekusi source code
+
+
+
+bagaimana source code diterjemahkan ke bahasa mesin :
+1. source code di compile menggunakan compiler
+2. dan source code diterjemahkan menggunakan interpreter
+
+cara kerja compiler : source code yang sudah di compile akan menghasilkan file bersifat executable/dapat dieksekusi komputer
+
+cara kerja interpreter : source code di duplikat agar bisa di interprete/diterjemahkan
+
+compiler : plus = program hasil kompilasi siap running, dan lebih cepat, source code aman karna tidak terlihat
+	   mins = tidak bisa lintas platform, tidak flexible (harus compile ulang)
+
+interpreter : plus = lintas platform, flexible (tidak perlu compile ulang), sehingga gampang utk diuji
+	      mins = lebih lambat, butuh soft interpreter, source code terlihat/terekspose
+
+
+Ada beberapa bahasa yg hybrid, menggabungkan kelebihan compiler dan interpreter. sehingga hasilnya di level intermediate language (bytecode)
+
+
+contoh bahasa programming menggunakan compiler : c, C++, objective-C
+bahasa C++, C#, objective-C dan Java bisa utk membuat operating system
+
+contoh bahasa programming menggunakan interpreter : javascript, php
+contoh bahasa programming menggunakan both interpreter & compiler (hybrid) : java, VBNet, Python
+
+====================================================================================================================
+
+why javascript? 
+1. gratis
+2. tidak perlu instalasi, tiap browser dah ada JS
+3. bahasa high level, mudah dipahami manusia
+4. scripting language. dibuat utk berinteraksi dengan website,
+5. kategori bahasa untyped.
+    ada 2 kategori bahasa programming, type dan untyped
+    untyped = tidak perlu mendefinisikan variable type pada deklarasi
+    type = perlu definisikan variable type pada deklarasi. misal: bikin deklarasi harus definisikan type datanya            (String, int ato boolean)
+6. bahasa interpreted. apakah interpreted?
+
+====================================================================================================================
+
+what JS can do? 
+1. client side web development (JS native) tnpa library dan framework --> front end
+   dengan bantuan framework, JQuerry, Angular, react, backbone dll
+   
+2. server side dev :  node JS, ExpressJS
+
+3. browser extention : bisa dengan JS
+
+4. desktop app : electron, appJS
+
+5. mobile app : JQuerry, mobile, cordova
+
+6. JSON (JS On Site)
+
+====================================================================================================================
+
+ES = ECMA Script, adalah nama sebenarnya dari JS
+
+====================================================================================================================
+
+lingkungan pengembangan JS / development environment
+
+bisa pake web browser, karena di tiap WB udah terinstall JS DE
+
+====================================================================================================================
+
+ada 6 type data di JS
+
+1. number -> 10, 10, -10
+2. string -> 'kata' [menggunakan kutip ato double quotes, agar di identifikasi sbagai string/char]
+3. boolean
+4. object
+5. function
+6. undefined
+
+begini:
+
+1. angka/number : tidak ada integer pada JS, hanya floating point. bisa menyimpan angka hingga 64 bit (2pangkat64)
+2. menyimpan angka dengan decimal. 3.14 
+3. menyimpan angka exponent
+4. jangan menulis angka dengan diawali 0
+5. angka spesial (Infinity, -Infinity, NaN [Not a Number])
+
+====================================================================================================================
+
+operator JS
+
+symbol yg digunakan utk melakukan operasi. 
+
+aritmatika/math  --> binary 
+penugasan        --> binary    
+perbandingan     --> binary
+logika           --> binary
+string           --> binary
+kondisional      --> ternary
+typeof           --> unary
+
+binary  = mmbutuhkan 2 operand (operand1  operator  operand2) misal: x = y  (x) operand1, (=) operator, (y) operand2
+unary   = mmbutuhkan 1 operand (operator  operand) atau (operand  operator)
+ternary = mmbutuhkan 3 operand
+
+NB: operand bilangan dalam variable 
+var x = 10; 
+x (operand1), = (operator), 10 (operand2)
+
+
+***** OPERATOR ******
+
+1. aritmatika = +, -, /, * %
+operator precedence / ops matematika (binary), yaitu prioritas eksekusi operasi aritmatika
+
+KuKaBaTaKu = kurung, kali, bagi, tambah, kurang
+() * / + - 
+
+dimana operasi aritmatika akan eksekusi yg di dalam kurung dulu, lalu ke kali, bagi, tambah dan kurang
+
+
+2. operator assignment / penugasan (binary). menggunakan tanda =, biasa digunakan saat bekerja dengan variable
+  misal : 
+   var x = 10
+
+    =   --> sama dengan  x = 10  
+   +=   --> sama dengan  x = x(10) + y(brapa nilai yg akan kita isi)
+   -=   --> sama dengan  x = x - y
+   *=   --> sama dengan  x = x * y
+   /=   --> sama dengan  x = x / y
+   %=   --> sama dengan  x = x % y
+
+
+3. operator perbandingan / comparison (binary)
+
+     ==     sama dengan
+    !=     tidak sama dengan
+    ===    strict sama dengan (compare identitas, tdk hanya bandingkan nilai, tapi juga type data (str ato int))
+    !==    strict tidak sama dengan (tegas, absolute)
+     >     lebih besar dari
+     <     lebih kecil dari
+     >=    lebih besar sama dengan
+     <=    lebih kecil sama dengan
+
+akan menghasilkan nilai boolean
+
+
+4. operator logika, menggunakan symbol 
+	&& = and --> hasilnya akan true bila 2 operand benar, tapi kalo salah 1 operand false, hasilnya false
+	|| = or  --> hasilnya akan true, kalo ada salah 1 operand yg nilainya true, ga peduli bila 1 operand false
+	 ! = Not --> kebalikan dari perbandingan diatas. apabila di depan nilai nya dikasih !, walopun hasilnya                      benar, akan di anggap false 
+
+
+
+5. operator string
+   menggunakan symbol +
+   var a = "niko"
+   var b = "novt"
+   a + b = "Nikonovt"
+
+   angka + angka = hasilnya angka
+   string + angka = hasilnya string
+   angka + string = hasilnya string
+   knapa hasilnya string? karna + dianggap operator string
+
+
+6. operator typeof (unary), karena hanya menggunakan/butuh 1 operand
+   digunakan untk mengetahui type data apa pada nilai operand nya
+   misal : typeof (10)
+           'number'
+           typeof ("10")
+           'string'  --> lho, knapa string? kan nulisnya angka bukan huruf ato char. karna pake quotation mark
+
+
+7. operator kondisional (ternary), membutuhkan 3 operand
+   untuk cek kondisi, dan nentuin hasilnya apabila hasilnya true ato false
+
+   contoh : kondisi =  (x % 2 == 1)? "benar" : "salah"
+            hasil = 'benar' 
+            benar --> true, salah --> false. kalo operand benar diganti salah, hasilnya pasti salah.
+            nilai boolean ny selalu "true" di alinea awal dan, false utk alinea trakhir
+            (kondisi) ? "true" : "false"  --> di nilai prtama selalu true, bisa kita ganti ke benar, genap ato             kalimat laen
+
+===================================================================================================================
+
+*** TYPE DATA STRING *****
+
+untuk represent data textual/plain text. contoh = 'niko';
+
+
+*** TYPE DATA BOOLEAN *****
+digunakan untuk statement peng kondisian, utk nentukan aksi berbeda dan mengatur alur kendali program
+
+nilai pada Boolean
+
+truthy                          falsy
+true                            false
+non zero num                      0
+"string"                         ""
+object                        undefined -------------> isi nilai var tapi masih kosong
+arrays                          null    
+functions                 Not A Number (NaN)
+
+
+
+*** VARIABLE *****
+
+apa itu var? --> var adalah sebuah wadah yg memiliki nama yg digunakan utk simpan sebuah value/nilai
+
+- utk membuat variable, ada 3 tahap: 
+
+  deklarasi = tahap daftarkan variable ke dalam lingkup yg sesuai
+
+  inisialisasi = proses pemesanan/penyediaan memori utk variable
+
+  assignment = menetapkan nilai yg spesifik ke variable
+
+contoh :   var x;  --> deklarasi skaligus inisialisasi var x
+               x = 20; --> assignment, isi nilai ato value sbuah var
+
+
+- ketentuan buat variable = 
+  tidak boleh pake spasi         --> var untung melulu (tidak boleh), untung_melulu (boleh)
+  tidak boleh diawali oleh angka --> var 1untung, var niko1 (boleh)
+  
+
+- metode shorthand, contoh :  var  nama = "niko",
+			           usia = 45,
+			           lulus = true;  (di var akhir, baru bisa ketik ;)
+
+- variable scope
+
+- ada keyword lain utk declare variable :
+   let 
+   const
+   "akan dijelaskan nanti"
+
+
+*** CONTROL FLOW *****
+
+alur kendali dari sbuah program, normal flow adalah struktur eksekusi program dari yg paling pertama/atas sampe ke bawah. 
+
+control flow, kita bisa eksekusi program/source code tanpa terstruktur sperti normal flow. dan untuk bisa menerapkan itu, bisa menggunakan pengulangan (Loop) dan peng kondisian (condition)
+
+- konsep LOOP = apabila ingin eksekusi statement scara berulang, namun tanpa harus ketik codingan sejumlah perulangan   yg kita mau. syntax LOOP adalah = (for, while dan do while)
+
+  a. while, ada 3 kondisi. nilai awal (variable dengan nilai awal), kondisi (if <=, >=, ===), aksi/eksekusi di      console.log dan increment & decrement variable nilai awal
+     mari telusuri keyword while.    
+  b. 
+
+- konsep CONDITIONS/PERCABANGAN = apabila ada kondisi dimana program akan pilih eksekusi statement yg berbeda,   berdasarkan kondisi nya. syntax CONDITIONS adalah = (if, else, else if, switch) 
+
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
