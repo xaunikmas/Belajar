@@ -62,7 +62,7 @@ console.log ('*************************************************************\n');
 // LATIHAN SLICE
 // rumus : 
 // var arrayKu = ['niko', 'noviyanto', 'naunx', 'fatih', 'bagong', 'petruk'];
-// var arrSlice = arrayKu.slice (1, 5); // --> 1 (adalah index ke -n), 5 (adalah index yg diambil seblum index ke -5)
+// var arrSlice = arrayKu.slice (1, 5); // --> 1 (adalah index ke -n), 5 (adalah index yg diambil seblum index ke -n[5 dalam hal ini])
 // console.log (arrSlice.join(' . '));
 // INGAT!!! ARRAY YG DI SLICE, AKAN MEMBUAT VARIABLE BARU
 
