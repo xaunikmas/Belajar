@@ -3,13 +3,11 @@
 // KEY AND VALUE PAIR
 
 // MENAMPILKAN INDEX PADA ARRAY
+// var angkaa = [1,2,3,4,5,6,[7,8,9]]; // --> array di dalam array, ato array multidimensi
+// var binatang = ['anjing', 'babik', 'sapi'];
+// console.log (binatang[1]);
+// console.log (angkaa[6][2]); // tampilan comd nya : console.log(variable[index luar][index dalam])
 
-// var binatang = ['kucing', 'babi', 'monyet'];
-// var myArr3 = ['monyet', 10, true, [4,5,6]];
-// console.log (binatang[2]);
-// console.log (typeof (binatang));
-// console.log (binatang.length);
-// console.log (myArr3[3][1]); // ---> menampilkan index di dalem array
 
 // MENAMPILKAN ISI ARRAY METHODE OBJECT
 
