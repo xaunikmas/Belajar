@@ -12,3 +12,12 @@ for (var noAngkot = 1; noAngkot <= total; noAngkot++){
         console.log ('Angkot no. '+ noAngkot + ' beroperasi'); } 
     else {console.log ('Angkot no. ' + noAngkot + ' sedang di bengkel'); }
     }
+
+// PENGKONDISIAN DENGAN PENGULANGAN "IF" 
+var angka = 'niko';
+if (angka % 2 == 0)
+{console.log (angka + ' adalah bilangan genap'); }
+    else if (angka % 2 == 1){console.log (angka + ' adalah bilangan ganjil')}
+    
+else {console.log (' ini adalah string, bukan bilangan integer')}; 
+
