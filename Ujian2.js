@@ -25,7 +25,7 @@
  */
 
 let code = "DISCOUNT10%";
-let price ="";
+let price = 750000;
 let total;
 
 switch (code.toLowerCase()) {
@@ -39,6 +39,8 @@ switch (code.toLowerCase()) {
     }
     console.log("Total yang harus di bayar Rp. " + total + ".");
     break;
+
+    
   case "discountharbolnas":
     if (price >= 250000) {
       total = price * 0.85;
