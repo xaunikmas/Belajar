@@ -14,7 +14,7 @@ for (var noAngkot = 1; noAngkot <= total; noAngkot++){
     }
 
 // PENGKONDISIAN DENGAN PENGULANGAN "IF" 
-var angka = 'niko';
+var angka = 12;
 if (angka % 2 == 0)
 {console.log (angka + ' adalah bilangan genap'); }
     else if (angka % 2 == 1){console.log (angka + ' adalah bilangan ganjil')}
