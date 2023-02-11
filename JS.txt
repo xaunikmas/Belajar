@@ -264,13 +264,48 @@ control flow, kita bisa eksekusi program/source code tanpa terstruktur sperti no
 
 - konsep LOOP = apabila ingin eksekusi statement scara berulang, namun tanpa harus ketik codingan sejumlah perulangan   yg kita mau. syntax LOOP adalah = (for, while dan do while)
 
-  a. while, ada 3 kondisi. nilai awal (variable dengan nilai awal), kondisi (if <=, >=, ===), aksi/eksekusi di      console.log dan increment & decrement variable nilai awal
+  a. while, ada 3 kondisi. nilai awal (variable dengan nilai awal), kondisi (if <=, >=, ===), aksi/eksekusi di             console.log dan increment & decrement variable nilai awal
      mari telusuri keyword while.    
-  b. 
+  b.  
 
 - konsep CONDITIONS/PERCABANGAN = apabila ada kondisi dimana program akan pilih eksekusi statement yg berbeda,   berdasarkan kondisi nya. syntax CONDITIONS adalah = (if, else, else if, switch) 
 
 -
+
+===================================================================================================================
+
+
+ARRAY :
+
+- Kumpulan antara key dan value. key adalah index pada array bertype integer dimulai dari 0
+- Array bertype object pada JS
+- mempunyai fungsi method length utk counting elemen di dalemnya
+- elemen pada array boleh memiliki type data beda
+- array bisa menyimpan array didalemnya. karna array adalah multidimensi/ array bersarang/nested array
+- METHOD ADALAH SEBUAH FUNGSI DALAM OBJECT, HARUS MENGGUNAKAN (PARENTHESIS) SETELAH PANGGIL VAR nya
+
+
+
+
+kumpulan beberapa nilai dalam variable. misal :
+
+var angka = [1, 2, 3, 4, 5];
+var items = [laptop, hp, mouse];
+
+var scores = [100, 20, 30];
+console.log (scores.length[1]); --> hasil outputnya adalah : 20
+
+=======================================================================================================
+
+FUNCTION
+
+fungsi adalah kompulan kode yang dijalankan untuk melakukan suatu tugas tertentu
+
+=====================================================================================================
+
+METHOD 
+
+metode dalam object adalah fungsi yg berada dalam object
 
 
 
